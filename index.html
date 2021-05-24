@@ -14,7 +14,7 @@
    <section>
 
 
-    
+
        
     <div class="circle">
 
@@ -48,17 +48,24 @@
         </div> <!-- TEXTBOX-->
 
         <div class="img-box">
-            <img src="imagens/makeup.png">
+            <img src="imagens/makeup.png" class="makeupimg">
         </div><!--IMG-BOX-->
 
 
     </div> <!-- Content-->
 
     <ul class="thumb"> 
-        <li> <img src="imagens/makeup.png"> </li>
-        <li> <img src="imagens/makeup2.png"> </li>
-        <li> <img src="imagens/makeup3.png"> </li>
+        <li> <img src="imagens/makeup.png" onclick="imgSlider('imagens/makeup.png')"> </li>
+        <li> <img src="imagens/makeup2.png" onclick="imgSlider('imagens/makeup2.png')"> </li>
+        <li> <img src="imagens/makeup3.png" onclick="imgSlider('imagens/makeup3.png')"> </li>
     </ul>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.makeupimg').src = anything; 
+        }
+    </script>
+
 
    </section>
 </body>
