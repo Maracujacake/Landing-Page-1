@@ -25,7 +25,8 @@
 
     <header>
         <a href="#"> <img src="imagens/cosmetics.png" class="logo">  </a>
-             <ul>
+        <div class="toggle" onclick="toggleMenu();"></div><!-- TOGGLE -->
+             <ul class="navigation">
                 <li> <a href="#" class="menu-itens">Home</a> </li>
                 <li> <a href="#" class="menu-itens">Sobre</a> </li>
                 <li> <a href="#" class="menu-itens">Produtos</a> </li>
@@ -66,6 +67,15 @@
         function imgSlider(anything){
             document.querySelector('.makeupimg').src = anything; 
         }
+
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
     </script>
 
 
